@@ -1,0 +1,10 @@
+# just a test file
+properties:
+  first: "one"
+  second: "two"
+test:
+  - a
+  - b
+  - c
+  - d
+  - e
