@@ -14,10 +14,6 @@ func window() *pixelgl.Window {
 	if err != nil {
 		panic(err)
 	}
-	/*
-		for !win.Closed() {
-			win.Update()
-		}*/
 
 	return win
 }
