@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	"github.com/faiface/pixel/pixelgl"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
+	"test/game"
+	"time"
 )
 
 const yamlFile = "config.yaml"
@@ -37,4 +40,8 @@ func main() {
 
 	fmt.Println("I think this worked maybe?")
 	fmt.Println(c)
+
+	pixelgl.Run(game.StartGame)
+
+	time.Sleep(5 * time.Second)
 }
